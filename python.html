@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TryroT136 | Python Scripts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- This placeholder will be automatically filled by loader.js -->
+    <!-- Since data-search-disabled is not present, the search bar will appear. -->
+    <header data-include="header.html"></header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Python Scripts</h1>
+            <p>A collection of useful scripts for automation, data analysis, and more.</p>
+        </section>
+
+        <!-- The container that main.js will populate with the cards below. -->
+        <!-- The default icon for any card on this page without one specified will be the Python logo. -->
+        <div id="project-container" data-default-icon="fa-brands fa-python">
+
+            <project-card
+              name="Data Analysis Toolkit"
+              icon-type="fa-solid fa-chart-pie"
+              buttons='[
+                {"text": "View on GitHub", "href": "#"}
+              ]'>
+              A suite of scripts designed to simplify common data cleaning and visualization tasks using the Pandas and Matplotlib libraries. This card uses a direct Font Awesome icon.
+            </project-card>
+
+            <project-card
+              name="Automated Backup Script"
+              icon-type="fa-solid fa-floppy-disk"
+              buttons='[
+                {"text": "View Gist", "href": "#"},
+                {"text": "Read Docs", "href": "#"}
+              ]'>
+              This script automatically compresses and backs up specified directories to a remote server or cloud storage location on a scheduled basis. The first button is primary, the second is secondary.
+            </project-card>
+
+            <project-card
+              name="Discord Bot Framework"
+              icon-type="fa-brands fa-discord"
+              buttons='[
+                {"text": "Invite Bot", "href": "#"},
+                {"text": "View Source", "href": "#"},
+                {"text": "Support Server", "href": "#"}
+              ]'>
+              A modular and extensible framework for building Discord bots, featuring command handling, event listeners, and easy-to-configure modules.
+            </project-card>
+            
+            <project-card
+              name="Web Scraper for Job Postings"
+              buttons='[
+                {"text": "View Source", "href": "#"}
+              ]'>
+              A script that scrapes various job boards for new postings based on keywords and sends a daily summary email. This card has no icon, so it uses the page's default Python icon.
+            </project-card>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 TryroT136. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- loader.js must come first to build the header -->
+    <script src="loader.js" defer></script>
+    <!-- main.js runs after to build the project cards -->
+    <script src="main.js" defer></script>
+
+</body>
+</html>

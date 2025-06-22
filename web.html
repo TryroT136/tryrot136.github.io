@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TryroT136 | Web Apps</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <header data-include="header.html"></header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Websites & Web Apps</h1>
+            <p>A showcase of my front-end and full-stack web development projects.</p>
+        </section>
+
+        <!-- The default icon for this page will be a globe -->
+        <div id="project-container" data-default-icon="fa-solid fa-globe">
+
+            <project-card
+              name="Interactive Portfolio Website"
+              icon-type="code"
+              buttons='[
+                {"text": "Live Site", "href": "#"},
+                {"text": "View Source", "href": "#"}
+              ]'>
+              A responsive, single-page portfolio built with modern front-end technologies to showcase my skills and projects.
+            </project-card>
+
+            <project-card
+              name="Full-Stack E-Commerce App"
+              icon-type="fa-solid fa-layer-group"
+              buttons='[
+                {"text": "Live Demo", "href": "#"},
+                {"text": "Front-End Source", "href": "#"},
+                {"text": "Back-End Source", "href": "#"}
+              ]'>
+              A complete e-commerce platform featuring a React front-end, a Node.js/Express API, and a PostgreSQL database for user and product management.
+            </project-card>
+
+            <project-card
+              name="CSS Gradient Generator"
+              icon-type="fa-solid fa-palette"
+              buttons='[
+                {"text": "Use Tool", "href": "#"},
+                {"text": "View on GitHub", "href": "#"}
+              ]'>
+              A simple and intuitive web tool built with vanilla JavaScript that allows users to create and preview CSS gradients, and copy the generated code.
+            </project-card>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 TryroT136. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="loader.js" defer></script>
+    <script src="main.js" defer></script>
+
+</body>
+</html>

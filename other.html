@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TryroT136 | Other Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <header data-include="header.html"></header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Other Projects</h1>
+            <p>A variety of other things I've built, including tools, configurations, and experiments.</p>
+        </section>
+
+        <!-- The default icon for this page will be a star -->
+        <div id="project-container" data-default-icon="fa-solid fa-star">
+
+            <project-card
+              name="My Dotfiles"
+              icon-type="config"
+              buttons='[
+                {"text": "View on GitHub", "href": "#"}
+              ]'>
+              My personal configuration files for my development environment (Neovim, Zsh, etc.). Optimized for productivity and style. This card uses the 'config' icon type.
+            </project-card>
+
+            <project-card
+              name="Game Jam Entry 2023"
+              icon-type="info"
+              buttons='[
+                {"text": "Play on Itch.io", "href": "#"},
+                {"text": "View Source", "href": "#"}
+              ]'>
+              A small game built in 48 hours for a game jam. This card uses a custom image override instead of an icon. (Note: The image link is a placeholder).
+            </project-card>
+            
+            <project-card
+              name="Placeholder Project"
+              icon-type="star"
+              buttons='[]'>
+              This is another project example. It has no buttons defined. If you remove all the project-card elements from this page, a "Nothing Here Yet" placeholder will appear automatically.
+            </project-card>
+
+            <!-- To test the placeholder, delete all three <project-card> elements above this line. -->
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 TryroT136. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="loader.js" defer></script>
+    <script src="main.js" defer></script>
+
+</body>
+</html>

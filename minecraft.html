@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TryroT136 | Minecraft Mods</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <header data-include="header.html"></header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Minecraft Mods</h1>
+            <p>Here are the mods I've developed to enhance the Minecraft experience.</p>
+        </section>
+
+        <!-- The container that the JS will populate -->
+        <!-- "data-default-icon" is the fallback icon for this page -->
+        <div id="project-container" data-default-icon="fa-solid fa-cube">
+
+            <!-- 
+              HOW TO ADD A NEW PROJECT:
+              Copy and paste this block. Change the attributes.
+              - name: The project title.
+              - icon-type: 'minecraft', 'python', 'star', etc. (defined in main.js).
+              - image-src: (Optional) URL to an image to override the icon.
+              - buttons: A JSON array of button objects.
+              - The text between the tags becomes the description.
+            -->
+
+            <project-card
+              name="Awesome Minecraft Mod"
+              icon-type="star"
+              buttons='[
+                {"text": "View on Modrinth", "href": "#"},
+                {"text": "Source on GitHub", "href": "#"}
+              ]'>
+              A short description of your mod. Explain what it does, what makes it cool, and its current status (e.g., in development, released).
+            </project-card>
+
+            <project-card
+              name="Another Cool Mod"
+              image-src="https://cdn.britannica.com/34/240534-050-B8C4B11E/Porcupine-fish-Diodon-hystox.jpg"
+              buttons='[{"text": "Download", "href": "#"}]'>
+              This mod adds new biomes and creatures. It uses a custom image instead of an icon.
+            </project-card>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 TryroT136. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Use the new, all-in-one script -->
+    <script src="loader.js" defer></script>
+    <script src="main.js" defer></script>
+
+</body>
+</html>

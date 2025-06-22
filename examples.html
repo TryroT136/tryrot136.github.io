@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TryroT136 | Examples</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <header data-include="header.html"></header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Project Card Examples</h1>
+            <p>This page demonstrates all features of the dynamic project generation system.</p>
+        </section>
+
+        <div id="project-container" data-default-icon="fa-solid fa-star">
+
+            <!-- === SECTION 1: EXAMPLES BY PROJECT TYPE === -->
+            <h2 class="showcase-header">Project Type Examples</h2>
+
+            <project-card name="Minecraft Mod" icon-type="minecraft" buttons='[{"text": "View on Modrinth"}]'>
+              A standard Minecraft mod project using a preset icon.
+            </project-card>
+
+            <project-card name="Minecraft Datapack" icon-type="datapack" buttons='[{"text": "Download"}]'>
+              A Minecraft datapack, which uses a different preset icon.
+            </project-card>
+
+            <project-card name="Python Script" icon-type="python" buttons='[{"text": "View on GitHub"}]'>
+              A typical Python project.
+            </project-card>
+            
+            <project-card name="C# Application" icon-type="fa-brands fa-microsoft" buttons='[{"text": "View Source"}]'>
+              A project written in C#. The icon is a direct Font Awesome class.
+            </project-card>
+
+            <project-card name="C/C++ Library" icon-type="fa-solid fa-gears" buttons='[{"text": "View Source"}]'>
+              A high-performance library. The icon is a direct Font Awesome class.
+            </project-card>
+
+            <project-card name="Itch.io Game" icon-type="fa-brands fa-itch-io" buttons='[{"text": "Play Game"}]'>
+              A game hosted on itch.io, using the brand icon directly.
+            </project-card>
+
+            <project-card name="Shadertoy Project" icon-type="shader" buttons='[{"text": "View on Shadertoy"}]'>
+              A GLSL shader project using the "shader" preset icon.
+            </project-card>
+
+
+            <!-- === SEPARATOR === -->
+            <hr>
+
+
+            <!-- === SECTION 2: FEATURE SHOWCASE === -->
+            <h2 class="showcase-header">Feature Showcase</h2>
+
+            <project-card name="Feature: Preset Icons" icon-type="config" buttons='[]'>
+              This card uses <code>icon-type="config"</code>. The script checks a list of presets and uses the corresponding Font Awesome class.
+            </project-card>
+            
+            <project-card name="Feature: Direct Font Awesome Icons" icon-type="fa-solid fa-rocket" buttons='[]'>
+              This card uses <code>icon-type="fa-solid fa-rocket"</code>. The script sees it starts with "fa-" and uses it directly as a class, giving you access to thousands of icons.
+            </project-card>
+
+            <project-card name="Feature: Custom Image Override" image-src="https://cdn.britannica.com/34/240534-050-B8C4B11E/Porcupine-fish-Diodon-hystox.jpg" buttons='[]'>
+              This card uses <code>image-src="..."</code>, which always takes priority over any icon setting. (Note: image is a placeholder).
+            </project-card>
+
+            <project-card name="Feature: Automatic Buttons" icon-type="code" buttons='[{"text": "Primary (auto)"}, {"text": "Secondary (auto)"}, {"text": "Another Secondary"}]'>
+              This card's first button is automatically primary, and all others become secondary by default.
+            </project-card>
+
+            <project-card name="Feature: Manual Button Override" icon-type="code" buttons='[{"text": "Forced Secondary", "secondary": true}, {"text": "Forced Primary", "secondary": false}]'>
+              This card demonstrates overriding the default button styles by explicitly setting <code>"secondary": true</code> or <code>false</code>.
+            </project-card>
+
+            <project-card name="Feature: Page Default Icon" buttons='[]'>
+                This card has no icon specified, so it falls back to this page's default icon, which is <code>fa-solid fa-star</code> set on the project-container div.
+            </project-card>
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 TryroT136. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="loader.js" defer></script>
+    <script src="main.js" defer></script>
+
+</body>
+</html>

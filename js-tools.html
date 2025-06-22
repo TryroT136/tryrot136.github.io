@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TryroT136 | JS Tools</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- This placeholder will be automatically filled by loader.js -->
+    <header data-include="header.html"></header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>JavaScript Tools & Utilities</h1>
+            <p>A collection of web-based tools and utilities built with vanilla JavaScript.</p>
+        </section>
+
+        <!-- The default icon for this page will be the JS logo -->
+        <div id="project-container" data-default-icon="fa-brands fa-js">
+
+            <h2 class="showcase-header">General Tools</h2>
+
+            <project-card
+              name="Markdown Previewer"
+              icon-type="fa-brands fa-markdown"
+              buttons='[
+                {"text": "Try It Live", "href": "#"},
+                {"text": "View Source", "href": "#"}
+              ]'>
+              A real-time, in-browser editor that converts Markdown syntax into styled HTML as you type.
+            </project-card>
+
+            <project-card
+              name="CSS Box-Shadow Generator"
+              icon-type="fa-solid fa-layer-group"
+              buttons='[
+                {"text": "Use Tool", "href": "#"}
+              ]'>
+              An interactive tool for creating complex `box-shadow` CSS rules with multiple layers, colors, and offsets.
+            </project-card>
+
+
+            <!-- === SEPARATOR === -->
+            <hr>
+
+
+            <h2 class="showcase-header">For Hotsy-Totsy Jewelry</h2>
+            <!-- A custom paragraph to add context to this section -->
+            <p style="text-align: center; color: var(--text-muted); max-width: 600px; margin: -1rem auto 2rem auto;">
+              These are custom tools I built to help my mom with her jewelry business, <a href="https://hotsy-totsy.com" target="_blank">hotsy-totsy.com</a>.
+            </p>
+
+            <project-card
+              name="Pricing Calculator"
+              icon-type="fa-solid fa-calculator"
+              buttons='[
+                {"text": "Open Tool", "href": "#"}
+              ]'>
+              A tool to accurately calculate item prices based on material costs, labor time, and desired profit margins.
+            </project-card>
+            
+            <project-card
+              name="Inventory Tracker"
+              icon-type="fa-solid fa-box-archive"
+              buttons='[
+                {"text": "Open App", "href": "#"},
+                {"text": "View on GitHub", "href": "#"}
+              ]'>
+              A simple, private web app to track inventory levels for beads, clasps, and other jewelry-making supplies.
+            </p>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 TryroT136. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- loader.js must come first to build the header -->
+    <script src="loader.js" defer></script>
+    <!-- main.js runs after to build the project cards -->
+    <script src="main.js" defer></script>
+
+</body>
+</html>
