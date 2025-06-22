@@ -289,3 +289,58 @@ code {
     width: 32px;
     height: 32px;
 }
+
+/* --- 404 Page Styles --- */
+.not-found-container {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.not-found-container .fa-ghost {
+    font-size: 5rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    animation: float 3s ease-in-out infinite; /* Fun little animation */
+}
+
+.not-found-container h1 {
+    color: white;
+    font-size: 2.5rem;
+    border-bottom: none;
+}
+
+.not-found-container p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin: 0 auto 2rem auto;
+}
+
+.not-found-container .button {
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.helpful-links h4 {
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.helpful-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* Animation for the ghost icon */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
