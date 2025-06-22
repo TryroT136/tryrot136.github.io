@@ -1,7 +1,81 @@
 <!DOCTYPE html>
-<html>
-  <h1>Welcome!</h1>
-  <a href="https://github.com/TryroT136">Github</a>
-  <p>I will update this page at some point</p>
-  <p style="font-size: 10px; color: #0006;">probably</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TryroT136 | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- The header is now just a placeholder that the JS will populate -->
+    <header data-include="header.html" data-search-disabled="true"></header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Welcome to my corner of the internet.</h1>
+            <p>I'm TryroT136, a developer and creator. I build Minecraft mods, write Python scripts, and explore other tech frontiers. Check out some of my work below.</p>
+        </section>
+
+        <!-- Featured Projects Section using the dynamic system -->
+        <section class="featured-work">
+            <h2>Featured Projects</h2>
+            <div id="project-container">
+                <!-- 
+                  To change featured projects, just edit these <project-card> elements.
+                  The main.js script will generate them automatically.
+                -->
+                <project-card
+                  name="Awesome Minecraft Mod"
+                  icon-type="minecraft"
+                  buttons='[
+                    {"text": "View on Modrinth", "href": "#"},
+                    {"text": "Source on GitHub", "href": "#"}
+                  ]'>
+                  A short description of your mod. Explain what it does, what makes it cool, and its current status.
+                </project-card>
+
+                <project-card
+                  name="Useful Python Script"
+                  icon-type="python"
+                  buttons='[
+                    {"text": "View on GitHub", "href": "#"}
+                  ]'>
+                  A description of a Python script you made. Maybe it automates a task or analyzes data.
+                </project-card>
+            </div>
+        </section>
+
+        <!-- Category cards to navigate to other pages -->
+        <section class="category-grid">
+            <a href="minecraft.html" class="category-card">
+                <i class="fa-solid fa-cube"></i>
+                <h2>Minecraft Mods</h2>
+                <p>Browse all of my mods.</p>
+            </a>
+            <a href="python.html" class="category-card">
+                <i class="fa-brands fa-python"></i>
+                <h2>Python Scripts</h2>
+                <p>See the collection of scripts I've written.</p>
+            </a>
+            <a href="other.html" class="category-card">
+                <i class="fa-solid fa-star"></i>
+                <h2>Other Projects</h2>
+                <p>View my other tools and configurations.</p>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 TryroT136. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Add BOTH script tags. The loader should come first. -->
+    <script src="loader.js" defer></script>
+    <script src="main.js" defer></script>
+
+</body>
 </html>
