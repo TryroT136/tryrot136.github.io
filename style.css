@@ -344,3 +344,29 @@ code {
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0px); }
 }
+
+/* --- Warning Banner Styles --- */
+.warning-banner {
+    background-color: #4a3c0d; /* A dark, muted yellow */
+    color: #fdeea6; /* A light, readable yellow */
+    border-bottom: 2px solid #c9a83a;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.warning-banner .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.warning-banner i {
+    font-size: 1.5rem;
+}
+
+.warning-banner p {
+    margin: 0;
+    max-width: 80%;
+    text-align: left;
+}

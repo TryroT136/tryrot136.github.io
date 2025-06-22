@@ -83,3 +83,22 @@ On any HTML page, you can disable the search bar by adding `data-search-disabled
 ### How to Organize a Project Page
 
 Inside the `<div id="project-container">`, you can use `<hr>` tags to create visual separators and `<h2 class="showcase-header">Title</h2>` to create section titles, just like on the `examples.html` page.
+
+### How to Add a Warning Banner
+
+You can add a prominent warning banner to the top of any page, which is useful for displaying site-wide alerts or disclaimers.
+
+1.  Open the HTML file where you want the banner to appear (e.g., `index.html`).
+2.  Paste the following HTML code directly below the `<header ...></header>` placeholder tag.
+
+#### Warning Banner Template:
+```html
+<div class="warning-banner">
+    <div class="container">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <p><b>Your Title:</b> Your warning message goes here.</p>
+    </div>
+</div>
+```
+
+The banner is styled to be noticeable but still fit within the site's theme. To remove it, simply delete this HTML block from the page.
